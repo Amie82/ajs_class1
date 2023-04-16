@@ -18,4 +18,3 @@ test('Character test type', () => {
   }
   expect(setName).toThrow('Тип должен быть строчным значением');
 });
-

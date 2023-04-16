@@ -1,6 +1,7 @@
 import Character from './app';
+
 export default class Zombie extends Character {
-    constructor(name) {
-      super(name, 'Zombie', 40, 10);
-    }
+  constructor(name) {
+    super(name, 'Zombie', 40, 10);
   }
+}
