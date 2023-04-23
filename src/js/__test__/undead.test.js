@@ -1,12 +1,14 @@
-import Undead from '../undead';
+import Undead from '../class/Undead';
 
-test('Undead test attack', () => {
-  const obj = new Undead('name');
-  expect(obj.attack).toBe(25);
-});
-test('Undead test name', () => {
-  function setName() {
-    return new Undead('n');
+test('Правильно создаётся объект', () => {
+  const undead = new Undead('Und');
+  const correct = {
+    attack: 25,
+    defence: 25,
+    health: 100,
+    level: 1,
+    name: Und,
+    type: Und
   }
-  expect(setName).toThrow('Имя должно состоять от 2 до 11 символов');
+  expect(Undead).toEqual(correct);
 });

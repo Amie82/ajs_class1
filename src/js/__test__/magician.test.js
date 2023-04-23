@@ -1,10 +1,14 @@
-import Magician from '../magician';
+import Magician from '../class/Magician';
 
-test('Magician test name', () => {
-  const obj = new Magician('name');
-  expect(obj.name).toBe('name');
-});
-test('Magician test attack', () => {
-  const obj = new Magician('name');
-  expect(obj.attack).toBe(10);
+test('Правильно создаётся объект', () => {
+  const magician = new Magician('Magic');
+  const correct = {
+    attack: 10,
+    defence: 40,
+    health: 100,
+    level: 1,
+    name: Magic,
+    type: Magic
+  }
+  expect(Magician).toEqual(correct);
 });

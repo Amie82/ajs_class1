@@ -1,10 +1,14 @@
-import Swordsman from '../swordsman';
+import Swordsman from '../class/Swordsman';
 
-test('Swordsman test name', () => {
-  const obj = new Swordsman('name');
-  expect(obj.name).toBe('name');
-});
-test('Swordsman test defence', () => {
-  const obj = new Swordsman('name');
-  expect(obj.defence).toBe(10);
+test('Правильно создаётся объект', () => {
+  const swordsman = new Swordsman('Swords');
+  const correct = {
+    attack: 40,
+    defence: 10,
+    health: 100,
+    level: 1,
+    name: Swords,
+    type: Swords
+  }
+  expect(Swordsman).toEqual(correct);
 });

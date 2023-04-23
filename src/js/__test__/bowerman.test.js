@@ -1,10 +1,14 @@
-import Bowerman from '../bowerman';
+import Bowerman from '../class/Bowerman';
 
-test('Bowerman test name', () => {
-  const obj = new Bowerman('name');
-  expect(obj.name).toBe('name');
-});
-test('Bowerman test attack', () => {
-  const obj = new Bowerman('name');
-  expect(obj.attack).toBe(25);
+test('Правильно создаётся объект', () => {
+  const bowerman = new Bowerman('Bowman');
+  const correct = {
+    attack: 25,
+    defence: 25,
+    health: 100,
+    level: 1,
+    name: Bowman,
+    type: Bowman
+  }
+  expect(Bowerman).toEqual(correct);
 });
