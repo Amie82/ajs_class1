@@ -1,4 +1,4 @@
-import Undead from '../class/Undead';
+import Undead from '../undead';
 
 test('Правильно создаётся объект', () => {
   const undead = new Undead('Und');
@@ -7,8 +7,8 @@ test('Правильно создаётся объект', () => {
     defence: 25,
     health: 100,
     level: 1,
-    name: Und,
-    type: Und
+    name: 'Und',
+    type: 'Und'
   }
-  expect(Undead).toEqual(correct);
+  expect(undead).toEqual(correct);
 });

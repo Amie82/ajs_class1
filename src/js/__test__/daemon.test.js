@@ -1,4 +1,4 @@
-import Daemon from '../class/Daemon';
+import Daemon from '../daemon';
 
 test('Правильно создаётся объект', () => {
   const daemon = new Daemon('Dmon');
@@ -7,8 +7,8 @@ test('Правильно создаётся объект', () => {
     defence: 40,
     health: 100,
     level: 1,
-    name: Dmon,
-    type: Dmon
+    name: 'Dmon',
+    type: 'Dmon'
   }
-  expect(Daemon).toEqual(correct);
+  expect(daemon).toEqual(correct);
 });

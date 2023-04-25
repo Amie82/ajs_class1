@@ -1,4 +1,4 @@
-import Bowerman from '../class/Bowerman';
+import Bowerman from '../bowerman';
 
 test('Правильно создаётся объект', () => {
   const bowerman = new Bowerman('Bowman');
@@ -7,8 +7,8 @@ test('Правильно создаётся объект', () => {
     defence: 25,
     health: 100,
     level: 1,
-    name: Bowman,
-    type: Bowman
+    name: 'Bowman',
+    type: 'Bowman'
   }
-  expect(Bowerman).toEqual(correct);
+  expect(bowerman).toEqual(correct);
 });

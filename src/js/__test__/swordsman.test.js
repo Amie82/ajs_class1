@@ -1,4 +1,4 @@
-import Swordsman from '../class/Swordsman';
+import Swordsman from '../swordsman';
 
 test('Правильно создаётся объект', () => {
   const swordsman = new Swordsman('Swords');
@@ -7,8 +7,8 @@ test('Правильно создаётся объект', () => {
     defence: 10,
     health: 100,
     level: 1,
-    name: Swords,
-    type: Swords
+    name: 'Swords',
+    type: 'Swords'
   }
-  expect(Swordsman).toEqual(correct);
+  expect(swordsman).toEqual(correct);
 });

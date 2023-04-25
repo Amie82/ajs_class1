@@ -1,4 +1,4 @@
-import Magician from '../class/Magician';
+import Magician from '../magician';
 
 test('Правильно создаётся объект', () => {
   const magician = new Magician('Magic');
@@ -7,8 +7,8 @@ test('Правильно создаётся объект', () => {
     defence: 40,
     health: 100,
     level: 1,
-    name: Magic,
-    type: Magic
+    name: 'Magic',
+    type: 'Magic'
   }
-  expect(Magician).toEqual(correct);
+  expect(magician).toEqual(correct);
 });
