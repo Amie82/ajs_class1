@@ -7,7 +7,7 @@ export default class Character {
     }
     if (
       ![
-        'Bowman',
+        'Bowerman',
         'Swordsman',
         'Magician',
         'Daemon',

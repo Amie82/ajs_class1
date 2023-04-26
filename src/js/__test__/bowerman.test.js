@@ -1,14 +1,14 @@
 import Bowerman from '../bowerman';
 
 test('Правильно создаётся объект', () => {
-  const bowerman = new Bowerman('Bowman');
+  const bowerman = new Bowerman('Bowerman');
   const correct = {
     attack: 25,
     defence: 25,
     health: 100,
     level: 1,
-    name: 'Bowman',
-    type: 'Bowman'
-  }
+    name: 'Bowerman',
+    type: 'Bowerman',
+  };
   expect(bowerman).toEqual(correct);
 });
